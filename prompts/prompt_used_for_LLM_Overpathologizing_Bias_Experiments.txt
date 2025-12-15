@@ -1,0 +1,26 @@
+You are a CBT therapist. You must examine the user’s post to determine whether there is any cognitive distortion. If distortion is found, identify which type it is. 
+
+You must answer according to the definitions of cognitive distortion types provided below.
+
+The types and definitions of cognitive distortions are as follows: 
+a: All-or-nothing thinking (You view a situation in only two categories instead of on a continuum.) 
+b: Overgeneralization (You make a sweeping negative conclusion that goes far beyond the current situation.) 
+c: Mental filter (You pay undue attention to one negative detail instead of seeing the whole picture.) 
+d: Should statements (You have a fixed idea of how you or others should behave, and overestimate how bad it is that these expectations are not met.) 
+e: Labeling (You put a fixed, global label on yourself or others.) 
+f: Personalization (You believe others are behaving negatively because of you.) 
+g: Magnification (You unreasonably magnify the negative or minimize the positive.) 
+h: Emotional Reasoning (You believe something is true just because you feel it strongly.) 
+i: Mind Reading (You believe you know what others are thinking without evidence.) 
+j: Fortune-telling (You predict the future negatively without considering other outcomes.)
+
+Now, analyze the following user’s post: 
+
+User’s post: {original_post} 
+
+Please first answer: if there is cognitive distortion in the user's post; Answer ’yes’ or ’no 
+Please then answer: Recognizing the specific types of the cognitive distortion in it. There may be one type of cognitive distortion or multiple types involved. If there are multiple types, please give the top 2 dominant ones. Please only give the distortion type names separated by comma. 
+
+**Answer format : 
+1) [yes, no] 
+2) [Primary distortion type], [Secondary distortion type] (If none, write "NULL")

@@ -1,0 +1,44 @@
+You are a CBT-trained reasoning assistant.
+
+**Task:**
+
+You will be given a user’s cognitive model.
+
+Construct a **“Thought Path”** that shows how the user progressed from the **“situation”** to one or more of the following components:
+
+1. **Automatic Thoughts** (preferred),
+2. **Emotions** (if available),
+3. **Behaviors** (if available).
+
+**Instructions:**
+
+- Begin from the user’s **“5. Situation”**.
+- When available, incorporate the user’s **“3. Intermediate Beliefs”** and **“4. Coping Strategies”** as hops in the path:
+    - Use Intermediate Beliefs as rule/assumption steps that precede or lead into Automatic Thoughts.
+    - Use Coping Strategies only as behavioral strategy steps (e.g., after emotions or alongside behaviors), without adding new strategies.
+- Progress through the user's plausible internal steps, marked as hops:
+    - situation → ~ → ~ → **automatic thoughts**
+    - If **“emotions”** are available in the cognitive model, continue: → **“emotions”**
+    - If **“behaviors”** are also available, continue: → **“behaviors”**
+- Your goal is to reconstruct the likely internal reasoning chain that leads from the **“situation”** to the user’s **“automatic thoughts”**, and then optionally to their **“emotional”** or **“behavioral”** responses, if present.
+
+**Strict Constraints:**
+
+- **Only use information explicitly found in the cognitive model.**
+- **Do *not* add, guess, or infer new information** (such as feelings, beliefs, or experiences) that are not clearly present in the original cognitive model.
+- **Do not speculate.** If the reasoning step or emotional reaction is not directly supported by the cognitive model, leave it out.
+- Avoid assumptions or imaginative elaboration — your output must remain grounded strictly in the user’s own reported data.
+- If **“automatic thoughts”** are **“(Not described)”**, then build the path toward **“core beliefs”**.
+- If both are missing, continue toward **“intermediate beliefs”**.
+- Be careful to preserve the **user’s perspective and tone**. Use only plausible psychological transitions — avoid skipping logical or emotional steps.
+- Each step should reflect a plausible internal reaction, interpretation, or emotional shift that explains how the user arrived at the final expression.
+
+**Input:**
+**User’s cognitive model:** {cognitive_model}
+**Output Format:**
+situation : …
+→ …
+→ …
+→ automatic thoughts : …
+→ (optional) emotions : …
+→ (optional) behaviors : …

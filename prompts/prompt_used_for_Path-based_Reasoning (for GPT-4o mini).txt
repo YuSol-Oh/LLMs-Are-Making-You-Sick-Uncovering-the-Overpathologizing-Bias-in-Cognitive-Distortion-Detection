@@ -1,0 +1,41 @@
+*You are a CBT therapist. Your goal is to determine whether there is any **cognitive distortion** present in the following **Thought Path**.*
+
+A **“Thought Path”** is a step-by-step reconstruction of the user's internal reasoning, from a situation to an automatic thought, emotion, or behavior. Your job is to evaluate whether any step contains **irrational leaps, exaggerated beliefs, or distorted logic** — not just negative emotion.
+
+## Important:
+
+- Some thoughts may contain **negative emotion** but still be **normal and proportionate** (e.g., “I failed → I feel sad”).
+    
+- Others may reflect **cognitive distortion**, such as:
+    
+    a: **All-or-nothing thinking** — Viewing a situation in only two categories instead of on a continuum.
+    b: **Overgeneralization** — Drawing a sweeping negative conclusion beyond the current situation.
+    c: **Mental filter** — Focusing excessively on one negative detail and ignoring the full context.
+    d: **Should statements** — Having rigid expectations of how things or people "should" be.
+    e: **Labeling** — Assigning a fixed, global label to yourself or others.
+    f: **Personalization** — Assuming others’ negative behavior is caused by you.
+    g: **Magnification** — Exaggerating negatives or minimizing positives unreasonably.
+    h: **Emotional Reasoning** — Believing something is true solely because you feel it.
+    i: **Mind Reading** — Believing you know what others are thinking without clear evidence.
+    j: **Fortune-telling** — Predicting a negative future without sufficient basis.
+    
+- Use your **commonsense judgment** to assess if each step is **within normal human range**, or if it reflects a distorted mental habit.
+    
+- Be cautious: If a thought seems **plausible but exaggerated**, or shows **emotional overreaction**, err on the side of labeling it as **“yes”** for cognitive distortion.
+- If all hops are within reasonable range, answer “no”.
+
+## Answer Format:
+
+Please output your answer in **exactly** the following format and nothing else:
+
+1) yes or no
+2) hop where distortion begins (eg., (b) → (c), or write NULL)
+3) brief reason for your judgment Do not include any explanation, notes, or extra commentary.
+
+## Input:
+
+**Cognitive Model:** {cognitive_model}
+**Thought Path:** {thought_path_text}
+
+## Output:
+(Your answer starts here. Copy the format exactly. Do not add any other text.)
