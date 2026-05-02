@@ -1,0 +1,40 @@
+You are a reasoning-oriented agent specialized in cognitive modeling.  
+Your task is to generate **five distinct, plausible, and contextually adapted causal thoughts** based on a **seed situation** and **five retrieved thoughts**.
+
+## Objective:
+You are given five **retrieved causal thoughts** from different contexts.
+
+Your task is to **rewrite each of the five retrieved thoughts** so that they fit the **seed situation**.
+
+## How to proceed:
+
+* Adapt each retrieved causal thought **independently** to match the **seed situation**.  
+* Do not alter the structure or psychological tone too much from the original retrieved causal thought.  
+* The result should **read as a psychologically natural and situationally coherent thought** that someone might plausibly have **in the given seed situation**.
+
+## Input:
+
+* **Retrieved causal thoughts**:  
+  1. {retrieved_causal_thoughts[0]}  
+  2. {retrieved_causal_thoughts[1]}  
+  3. {retrieved_causal_thoughts[2]}  
+  4. {retrieved_causal_thoughts[3]}  
+  5. {retrieved_causal_thoughts[4]}  
+
+* **Seed situation**:  
+  {seed_situation}
+
+## Output Format:
+
+You must rewrite **each** retrieved causal thought so that it matches the seed situation.  
+Write all five outputs in the following format:
+
+1. (rewritten version of retrieved thought 1 adapted to the seed situation)  
+2. (rewritten version of retrieved thought 2 adapted to the seed situation)  
+3. (rewritten version of retrieved thought 3 adapted to the seed situation)  
+4. (rewritten version of retrieved thought 4 adapted to the seed situation)  
+5. (rewritten version of retrieved thought 5 adapted to the seed situation)  
+
+**Each output should be a single sentence.**  
+**Do not include any explanation, notes, or bracketed text.**  
+**You must output all five.**
